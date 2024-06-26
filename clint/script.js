@@ -17,7 +17,7 @@ document.getElementById('uploadForm').addEventListener('submit', function(event)
     formData.append('lastName', lastName);
     formData.append('photo', photo);
 
-    fetch('http://localhost:8000/predict', {
+    fetch('https://retino-care-website.onrender.com/predict', {
         method: 'POST',
         body: formData
     })
