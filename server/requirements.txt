@@ -1,0 +1,6 @@
+tensorflow==2.10.0
+fastapi
+uvicorn
+opencv-python==4.9.0.80
+numpy
+efficientnet==1.1.1
