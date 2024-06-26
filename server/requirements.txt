@@ -4,3 +4,4 @@ uvicorn==0.29.0
 opencv-python==4.9.0.80
 numpy==1.26.4
 efficientnet==1.1.1
+python-multipart==0.0.9
