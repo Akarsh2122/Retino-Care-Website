@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <title>Upload Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="hero" id="home">
+        <nav>
+            <!-- <a href="#home"><img src="eye-svgrepo-com.svg" alt="bookmark logo" id="logo" style="height: 40px;"></a>
+             -->
+             <h3>PSIT</h3>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#what-we-do">What We Do 💭</a></li>
+            </ul>
+        </nav>
+        <div class="hero-row">
+            <div class="left-col">
+                <div class="left-col-text">
+                    <h1>Detecting Diabetic Retinopathy: An ML-Powered Approach</h1>
+                    <p>Machine learning analyzes retinal images to identify signs of diabetic retinopathy, aiding early diagnosis. 🌟👁️</p>
+                    <div class="hero-links">
+                        <a href="#">Get Checked</a>
+                        <a href="#">Get Cured</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right-col">
+                <div class="container">
+                    <h2>Upload Image</h2>
+                    <form id="uploadForm" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="photo">Image:</label>
+                            <input type="file" id="photo" name="photo" accept="image/*" required>
+                        </div>
+                        <button class="pushable">
+                            <span class="front">Submit</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="content">
+            <h2>Features</h2>
+            <p>Our ML-powered solution offers:</p>
+            <ul>
+                <li>Accurate Retinopathy Detection</li>
+                <li>Fast and Reliable Analysis</li>
+                <li>Secure Data Handling</li>
+                <li>User-Friendly Interface</li>
+                <li>Detailed Reports and Insights</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <div class="content">
+            <h2>Pricing</h2>
+            <p>We offer competitive pricing plans:</p>
+            <ul>
+                <li>Basic Plan: $29/month - Includes basic features and up to 100 analyses per month.</li>
+                <li>Pro Plan: $59/month - Includes all features and up to 500 analyses per month.</li>
+                <li>Enterprise Plan: Contact us for custom pricing - Tailored for large-scale use.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="what-we-do">
+        <div class="content">
+            <h2>What We Do</h2>
+            <p>We leverage the power of machine learning to help detect diabetic retinopathy early, providing timely and accurate diagnoses to aid in the prevention of vision loss.</p>
+            <p>Our mission is to make advanced medical diagnostics accessible and affordable to everyone.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need further information, please reach out to us:</p>
+            <p>Email: support@mlretinopathy.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Vision St, Health City, HC 12345</p>
+        </div>
+    </section>
+
+    <section id="aboutus">
+        <div class="content">
+            <h2>About Us</h2>
+            <div class="team">
+                <div class="team-member">
+                    <h3>Anusha Umrao</h3>
+                    <p>Team Member</p>
+                    <p>Anusha has extensive experience in software development and project management.</p>
+                </div>
+                <div class="team-member">
+                    <h3>Akarsh Sachan</h3>
+                    <p>Team Leader</p>
+                    <p>Akrash leads the team with a deep understanding of machine learning and AI technologies.</p>
+                </div>
+                <div class="team-member">
+                    <h3>Shreya Singh</h3>
+                    <p>Front-end Developer</p>
+                    <p>Shreya is responsible for designing and implementing user interfaces.</p>
+                </div>
+                <div class="team-member">
+                    <h3>Anuskha Bajpai</h3>
+                    <p>Back-end Developer</p>
+                    <p>Anuskha manages server-side logic and database operations to ensure seamless performance.</p>
+                </div>                
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

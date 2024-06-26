@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #593c5d89;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 3rem;
+            color: #2907e788;
+        }
+        img {
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        #resultInfo {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #2907e746;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.4vw;
+        }
+        #uploadedImages {
+            margin-top: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="resultInfo"></div>
+        <div id="uploadedImages"></div>
+        <h1 id="resultText"></h1>
+    </div>
+    <script>
+        const firstName = localStorage.getItem('firstName');
+        const lastName = localStorage.getItem('lastName');
+        const photoData = localStorage.getItem('photoData');
+        const result = localStorage.getItem('result');
+
+        const fullName = `${firstName} ${lastName}`;
+
+        document.getElementById('resultInfo').innerHTML = `<p>${fullName}</p>`;
+        document.getElementById('resultText').textContent = `Result: ${result}`;
+
+        if (photoData) {
+            const uploadedImages = document.getElementById('uploadedImages');
+            const img = document.createElement('img');
+            img.src = photoData;
+            img.alt = 'Uploaded Photo';
+            uploadedImages.appendChild(img);
+        }
+    </script>
+</body>
+</html>
